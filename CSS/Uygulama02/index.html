@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Id & Class</title>
+    <style>
+        /*		
+			** Tüm kutulara 300px genişlik ve yükseklik veriniz.
+		    ** Tüm kutulara border veriniz.
+			** Box #1 : kırmızı , Box #2 : blue , Box #1 : turuncu arkaplan renklerini veriniz.
+		    ** Tüm kutuları yan yana getirin. 
+			** Sayfa başlığının yüksekliğini 150px ve arkaplan rengini ise mavi yapınız.
+		*/
+        
+        div {
+            height: 300px;
+            width: 300px;
+            border-style: dotted;
+            display: inline-block;
+        }
+        
+        .box1 {
+            background-color: red;
+        }
+        
+        .box2 {
+            background-color: blue;
+        }
+        
+        .box3 {
+            background-color: chartreuse;
+        }
+        
+        #header {
+            border: none;
+            height: 150px;
+            background-color: cyan;
+            display: block;
+        }
+    </style>
+</head>
+
+<body>
+
+    <div id="header">
+        Game Header
+    </div>
+
+    <div class="box1">
+        Box #1
+    </div>
+
+    <div class="box2">
+        Box #2
+    </div>
+
+    <div class="box3">
+        Box #3
+    </div>
+
+</body>
+
+</html>
