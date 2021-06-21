@@ -1,17 +1,9 @@
-#container {
-    width: 1140px;
-}
-
 #blog-post-container {
     width: 75%;
-    background-color: aqua;
+    float: left;
 }
 
 #others-posts {
     width: 25%;
-    background-color: brown;
-}
-
-.author-box {
-    border: 1px solid black;
+    float: left;
 }
