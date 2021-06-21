@@ -1,9 +1,28 @@
+#container {
+    width: 1140px;
+}
+
 #blog-post-container {
     width: 75%;
     float: left;
 }
 
-#others-posts {
+#other-posts {
     width: 25%;
     float: left;
+}
+
+.tags {
+    margin: 0;
+    padding: 0;
+}
+
+.tags li {
+    list-style: none;
+    display: inline-block;
+    margin-right: 5px;
+}
+
+.tags li a {
+    text-decoration: none;
 }
