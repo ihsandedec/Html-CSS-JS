@@ -10,6 +10,19 @@
 #other-posts {
     width: 25%;
     float: left;
+    position: fixed;
+    top: 20px;
+    right: 0;
+}
+
+.blog-post {
+    position: relative;
+}
+
+.date {
+    position: absolute;
+    top: 0;
+    right: 50px;
 }
 
 .tags {
