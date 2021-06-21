@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Positioning</title>
+    <style>
+        .box {
+            width: 120px;
+            height: 120px;
+        }
+        
+        .mbox {
+            width: 30px;
+            height: 30px;
+            background-color: mediumblue;
+            position: absolute;
+            top: 5px;
+        }
+        
+        #first {
+            background: chartreuse;
+            width: 100%;
+            position: sticky;
+            top: 50px;
+        }
+        
+        #second {
+            background: crimson;
+            position: relative;
+        }
+        
+        #third {
+            background: darkmagenta;
+            position: fixed;
+            top: 0;
+            right: 0;
+        }
+    </style>
+</head>
+
+<body>
+    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Incidunt eos voluptatum fugiat veritatis minus, odit perferendis expedita illum iste deleniti nulla qui et sint accusantium, dolorum, corporis aliquid sunt ex?</p>
+    <div class="box" id="first">box 1</div>
+    <div class="box" id="second">
+        <div class="mbox"></div>
+    </div>
+    <div class="box" id="third">box 3</div>
+
+</body>
+
+</html>
