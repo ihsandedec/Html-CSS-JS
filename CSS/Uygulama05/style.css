@@ -109,3 +109,37 @@ div#share a:hover {
     font-size: 1.8em;
     opacity: 0.9;
 }
+
+#inner-other-pots ul {
+    list-style: none;
+}
+
+#inner-other-pots ul li {
+    padding: 5px;
+    margin-bottom: 2px;
+}
+
+.header {
+    padding-top: 5px;
+    padding-left: 12px;
+    padding-bottom: 10px;
+    border-bottom: 1px solid #ddd;
+    margin-bottom: 10px;
+}
+
+.tag {
+    background-color: white;
+    color: aqua;
+    border: 1px solid aqua;
+    display: inline-block;
+    padding-left: 5px;
+    padding-right: 5px;
+    text-align: center;
+    border-radius: 5px;
+}
+
+.tag:hover {
+    background-color: aqua;
+    border: 1px solid white;
+    color: white;
+}
