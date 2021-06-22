@@ -6,10 +6,15 @@
 
 body {
     background: #f1f1f1;
+    font-family: 'Roboto Condensed', sans-serif;
+    font-size: 18px;
+    color: #333;
+    line-height: 135%;
 }
 
 h2 {
     margin-bottom: 10px;
+    font-size: 25px;
 }
 
 #container {
@@ -37,6 +42,9 @@ h2 {
     background: white;
     margin-bottom: 15px;
     padding: 20px;
+    border-bottom-left-radius: 8px;
+    border-bottom-right-radius: 8px;
+    box-shadow: 0 0 0 1px rgb(0, 0, 0, .06);
 }
 
 .blog-post {
@@ -51,10 +59,17 @@ h2 {
     position: absolute;
     right: 50px;
     top: 27px;
+    font-size: 12px;
+    color: #aaa;
 }
 
 .blog-text {
     margin-top: 15px;
+    margin-bottom: 15px;
+    font-size: 16px;
+    color: rgb(102, 99, 99);
+    line-height: 25px;
+    text-align: justify;
 }
 
 .tags li {
@@ -81,4 +96,16 @@ h2 {
     float: left;
     margin-top: 50px;
     margin-left: 20px;
+}
+
+div#share a {
+    margin-right: 10px;
+    font-size: 1.5em;
+    color: gray;
+    opacity: 0.6;
+}
+
+div#share a:hover {
+    font-size: 1.8em;
+    opacity: 0.9;
 }
