@@ -13,12 +13,13 @@ body {
 }
 
 h2 {
+    margin-top: 8px;
     margin-bottom: 10px;
     font-size: 25px;
 }
 
 #container {
-    width: 1140px;
+    width: 1000px;
     margin: 20px auto;
 }
 
@@ -30,7 +31,7 @@ h2 {
 #other-posts {
     width: 25%;
     float: left;
-    padding-left: 10px;
+    padding-left: 30px;
 }
 
 #inner-other-posts {
@@ -38,13 +39,15 @@ h2 {
     top: 20px;
 }
 
+.p-20 {
+    padding: 20px;
+}
+
 .box {
     background: white;
     margin-bottom: 15px;
-    padding: 20px;
-    border-bottom-left-radius: 8px;
-    border-bottom-right-radius: 8px;
-    box-shadow: 0 0 0 1px rgb(0, 0, 0, .06);
+    border-radius: 8px;
+    box-shadow: 0 2px 8px 2px rgba(20, 23, 28, .15)
 }
 
 .blog-post {
@@ -53,12 +56,34 @@ h2 {
 
 .blog-post img {
     width: 100%;
+    border-top-left-radius: 8px;
+    border-top-right-radius: 8px;
+    transition: opacity 2s;
+}
+
+.blog-post img:hover {
+    opacity: 0.8;
+    cursor: pointer;
+}
+
+.blog-tittle {
+    font-weight: 800;
+}
+
+.blog-tittle a {
+    color: #444;
+    text-decoration: none;
+    transition: all 0.3s;
+}
+
+.blog-tittle a:hover {
+    color: rgb(71, 240, 240);
 }
 
 .date {
     position: absolute;
-    right: 50px;
-    top: 27px;
+    right: 20px;
+    bottom: 20px;
     font-size: 12px;
     color: #aaa;
 }
@@ -88,6 +113,7 @@ h2 {
 }
 
 #author-box img {
+    width: 16%;
     border-radius: 50%;
     float: left;
 }
@@ -103,6 +129,7 @@ div#share a {
     font-size: 1.5em;
     color: gray;
     opacity: 0.6;
+    transition: font-size 0.3s;
 }
 
 div#share a:hover {
@@ -128,18 +155,20 @@ div#share a:hover {
 }
 
 .tag {
-    background-color: white;
-    color: aqua;
-    border: 1px solid aqua;
     display: inline-block;
+    font-size: 15px;
+    background-color: white;
+    color: rgb(71, 240, 240);
+    border: 1px solid rgb(71, 240, 240);
     padding-left: 5px;
     padding-right: 5px;
     text-align: center;
     border-radius: 5px;
+    transition: background-color 0.4s;
 }
 
 .tag:hover {
-    background-color: aqua;
+    background-color: rgb(71, 240, 240);
     border: 1px solid white;
     color: white;
 }
