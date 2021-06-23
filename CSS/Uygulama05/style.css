@@ -1,174 +1,208 @@
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-}
-
-body {
-    background: #f1f1f1;
-    font-family: 'Roboto Condensed', sans-serif;
-    font-size: 18px;
-    color: #333;
-    line-height: 135%;
-}
-
-h2 {
-    margin-top: 8px;
-    margin-bottom: 10px;
-    font-size: 25px;
-}
-
-#container {
-    width: 1000px;
-    margin: 20px auto;
-}
-
-#blog-post-container {
-    width: 75%;
-    float: left;
-}
-
-#other-posts {
-    width: 25%;
-    float: left;
-    padding-left: 30px;
-}
-
-#inner-other-posts {
-    position: fixed;
-    top: 20px;
-}
-
-.p-20 {
-    padding: 20px;
-}
-
-.box {
-    background: white;
-    margin-bottom: 15px;
-    border-radius: 8px;
-    box-shadow: 0 2px 8px 2px rgba(20, 23, 28, .15)
-}
-
-.blog-post {
-    position: relative;
-}
-
-.blog-post img {
-    width: 100%;
-    border-top-left-radius: 8px;
-    border-top-right-radius: 8px;
-    transition: opacity 2s;
-}
-
-.blog-post img:hover {
-    opacity: 0.8;
-    cursor: pointer;
-}
-
-.blog-tittle {
-    font-weight: 800;
-}
-
-.blog-tittle a {
-    color: #444;
-    text-decoration: none;
-    transition: all 0.3s;
-}
-
-.blog-tittle a:hover {
-    color: rgb(71, 240, 240);
-}
-
-.date {
-    position: absolute;
-    right: 20px;
-    bottom: 20px;
-    font-size: 12px;
-    color: #aaa;
-}
-
-.blog-text {
-    margin-top: 15px;
-    margin-bottom: 15px;
-    font-size: 16px;
-    color: rgb(102, 99, 99);
-    line-height: 25px;
-    text-align: justify;
-}
-
-.tags li {
-    list-style: none;
-    display: inline;
-    margin-right: 5px;
-}
-
-.tags li a {
-    text-decoration: none;
-}
-
-#author-box {
-    border-top: 1px solid RGB(0, 0, 0, .125);
-    padding-top: 10px;
-}
-
-#author-box img {
-    width: 16%;
-    border-radius: 50%;
-    float: left;
-}
-
-.author-text {
-    float: left;
-    margin-top: 50px;
-    margin-left: 20px;
-}
-
-div#share a {
-    margin-right: 10px;
-    font-size: 1.5em;
-    color: gray;
-    opacity: 0.6;
-    transition: font-size 0.3s;
-}
-
-div#share a:hover {
-    font-size: 1.8em;
-    opacity: 0.9;
-}
-
-#inner-other-pots ul {
-    list-style: none;
-}
-
-#inner-other-pots ul li {
-    padding: 5px;
-    margin-bottom: 2px;
-}
-
-.header {
-    padding-top: 5px;
-    padding-left: 12px;
-    padding-bottom: 10px;
-    border-bottom: 1px solid #ddd;
-    margin-bottom: 10px;
-}
-
-.tag {
-    display: inline-block;
-    font-size: 15px;
-    background-color: white;
-    color: rgb(71, 240, 240);
-    border: 1px solid rgb(71, 240, 240);
-    padding-left: 5px;
-    padding-right: 5px;
-    text-align: center;
-    border-radius: 5px;
-    transition: background-color 0.4s;
-}
-
-.tag:hover {
-    background-color: rgb(71, 240, 240);
-    border: 1px solid white;
-    color: white;
-}
+    * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+    }
+    
+    body {
+        background: #f1f1f1;
+        font-family: 'Roboto Condensed', sans-serif;
+        font-size: 18px;
+        color: #333;
+        line-height: 135%;
+    }
+    
+    h2 {
+        margin-top: 8px;
+        margin-bottom: 10px;
+        font-size: 25px;
+    }
+    
+    .container {
+        width: 1000px;
+        margin: 0 auto;
+    }
+    
+    #blog-post-container {
+        width: 75%;
+        float: left;
+    }
+    
+    #other-posts {
+        width: 25%;
+        float: left;
+        padding-left: 30px;
+    }
+    
+    #inner-other-posts {
+        position: fixed;
+        top: 20px;
+    }
+    
+    .p-20 {
+        padding: 20px;
+    }
+    
+    .mt-20 {
+        margin: 20px auto;
+    }
+    
+    .box {
+        background: white;
+        margin-bottom: 15px;
+        border-radius: 8px;
+        box-shadow: 0 2px 8px 2px rgba(20, 23, 28, .15)
+    }
+    
+    .blog-post {
+        position: relative;
+    }
+    
+    .blog-post img {
+        width: 100%;
+        border-top-left-radius: 8px;
+        border-top-right-radius: 8px;
+        transition: opacity 2s;
+    }
+    
+    .blog-post img:hover {
+        opacity: 0.8;
+        cursor: pointer;
+    }
+    
+    .blog-tittle {
+        font-weight: 800;
+    }
+    
+    .blog-tittle a {
+        color: #444;
+        text-decoration: none;
+        transition: all 0.3s;
+    }
+    
+    .blog-tittle a:hover {
+        color: rgb(71, 240, 240);
+    }
+    
+    .date {
+        position: absolute;
+        right: 20px;
+        bottom: 20px;
+        font-size: 12px;
+        color: #aaa;
+    }
+    
+    .blog-text {
+        margin-top: 15px;
+        margin-bottom: 15px;
+        font-size: 16px;
+        color: rgb(102, 99, 99);
+        line-height: 25px;
+        text-align: justify;
+    }
+    
+    .tags li {
+        list-style: none;
+        display: inline;
+        margin-right: 5px;
+    }
+    
+    .tags li a {
+        text-decoration: none;
+    }
+    
+    #author-box {
+        border-top: 1px solid RGB(0, 0, 0, .125);
+        padding-top: 10px;
+    }
+    
+    #author-box img {
+        width: 16%;
+        border-radius: 50%;
+        float: left;
+    }
+    
+    .author-text {
+        float: left;
+        margin-top: 50px;
+        margin-left: 20px;
+    }
+    
+    div#share a {
+        margin-right: 10px;
+        font-size: 1.5em;
+        color: gray;
+        opacity: 0.6;
+        transition: font-size 0.3s;
+    }
+    
+    div#share a:hover {
+        font-size: 1.8em;
+        opacity: 0.9;
+    }
+    
+    #inner-other-pots ul {
+        list-style: none;
+    }
+    
+    #inner-other-pots ul li {
+        padding: 5px;
+        margin-bottom: 2px;
+    }
+    
+    .header {
+        padding-top: 5px;
+        padding-left: 12px;
+        padding-bottom: 10px;
+        border-bottom: 1px solid #ddd;
+        margin-bottom: 10px;
+    }
+    
+    .tag {
+        display: inline-block;
+        font-size: 15px;
+        background-color: white;
+        color: rgb(71, 240, 240);
+        border: 1px solid rgb(71, 240, 240);
+        padding-left: 5px;
+        padding-right: 5px;
+        text-align: center;
+        border-radius: 5px;
+        transition: background-color 0.4s;
+    }
+    
+    .tag:hover {
+        background-color: rgb(71, 240, 240);
+        border: 1px solid white;
+        color: white;
+    }
+    
+    .nav {
+        background-color: #333;
+    }
+    
+    .nav ul {
+        list-style-type: none;
+        overflow: hidden;
+    }
+    
+    .nav li {
+        float: left;
+    }
+    
+    .nav li a {
+        display: inline-block;
+        color: #f1f1f1;
+        padding: 14px 16px;
+        text-align: center;
+        text-decoration: none;
+        transition: background-color 0.3s linear;
+    }
+    
+    .nav li a:hover {
+        background-color: #111;
+    }
+    
+    .active {
+        background-color: #DD4458;
+    }
