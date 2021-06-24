@@ -90,3 +90,28 @@
         padding: 1.2rem;
         text-align: center;
     }
+    
+    #section-c {
+        background-color: #fff;
+        color: #333;
+        text-align: center;
+        padding: 4rem;
+    }
+    
+    #section-d .box {
+        font-family: 'Open Sans', sans-serif;
+        padding: 4rem;
+    }
+    
+    #section-d .box:first-child {
+        background-color: #2690d4;
+    }
+    
+    footer {
+        background: #000;
+        padding: 3rem;
+    }
+    
+    footer a {
+        color: #2690d4;
+    }
