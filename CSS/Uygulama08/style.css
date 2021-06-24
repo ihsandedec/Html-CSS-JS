@@ -5,7 +5,7 @@
     }
     
     html {
-        font-size: 10px;
+        font-size: 7px;
     }
     
     body {
@@ -23,6 +23,7 @@
     
     p {
         padding: 1.6rem 0;
+        font-size: 2rem;
     }
     
     img {
@@ -32,6 +33,21 @@
     
     header {
         height: 45rem;
+    }
+    
+    .name {
+        transition: color 0.3s;
+    }
+    
+    .name:hover {
+        color: #2690d4;
+        cursor: pointer;
+    }
+    
+    .clearfix::after {
+        content: "";
+        display: block;
+        clear: both;
     }
     
     header .bg-image {
@@ -84,6 +100,12 @@
         background-color: #fff;
         color: #333;
         margin-bottom: 1.5rem;
+        border-radius: 3px;
+    }
+    
+    #section-b ul li img {
+        border-top-left-radius: 3px;
+        border-top-right-radius: 3px;
     }
     
     .col-content {
@@ -109,9 +131,41 @@
     
     footer {
         background: #000;
-        padding: 3rem;
+        padding: 2.5rem;
+    }
+    
+    #footer-name {
+        color: #2690d4;
     }
     
     footer a {
+        padding: 5px;
+        color: #fff;
+        font-size: 1.7rem;
+        transition: color 0.3s;
+    }
+    
+    footer a:hover {
         color: #2690d4;
+    }
+    
+    @media screen and (min-width:800px) {
+        html {
+            font-size: 9px;
+        }
+    }
+    
+    @media screen and (min-width:1200px) {
+        #section-b ul li {
+            display: inline-block;
+            width: 28%;
+            margin: 1%;
+        }
+        .box {
+            width: 50%;
+            float: left;
+        }
+        html {
+            font-size: 12px;
+        }
     }
