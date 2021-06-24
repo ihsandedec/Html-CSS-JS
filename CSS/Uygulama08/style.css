@@ -25,6 +25,11 @@
         padding: 1.6rem 0;
     }
     
+    img {
+        width: 100%;
+        height: auto;
+    }
+    
     header {
         height: 45rem;
     }
@@ -58,4 +63,30 @@
     .btn:hover {
         background-color: #eaeaea;
         color: #333;
+    }
+    
+    #section-a {
+        background-color: #eaeaea;
+        color: #333;
+        padding: 3.2rem 0;
+    }
+    
+    #section-b {
+        font-family: 'Open Sans', sans-serif;
+        padding: 2rem;
+    }
+    
+    #section-b ul {
+        list-style-type: none;
+    }
+    
+    #section-b ul li {
+        background-color: #fff;
+        color: #333;
+        margin-bottom: 1.5rem;
+    }
+    
+    .col-content {
+        padding: 1.2rem;
+        text-align: center;
     }
