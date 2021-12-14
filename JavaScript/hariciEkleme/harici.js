@@ -1,0 +1,1 @@
+alert("JavaScript kursuna hoşgeldiniz");
