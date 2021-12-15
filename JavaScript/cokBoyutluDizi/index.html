@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script type="text/javascript">
+        var kurs = new Array("HTML", "CSS");
+        var kursDetay = new Array(2);
+        for (i = 0; i < 2; i++) {
+            kursDetay[i] = new Array(2);
+
+        }
+
+        kursDetay[0][0] = "Emrah Yüksel";
+        kursDetay[0][1] = "23 saat";
+        kursDetay[0][2] = "Udemy";
+
+        kursDetay[0][0] = "İhsan Dedeç";
+        kursDetay[0][1] = "18 saat";
+        kursDetay[0][2] = "Udemy";
+
+        for (i = 0; i < 2; i++) {
+            document.write(kurs[i] + "<br>" + "-----------" + "<br>");
+            for (var y = 0; y < 3; y++) {
+
+                document.write(kursDetay[i][y] + "<br>");
+            }
+
+        }
+    </script>
+</head>
+
+<body>
+
+</body>
+
+</html>
