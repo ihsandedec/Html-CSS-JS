@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <p>javascript Kursuna Hoş Geldiniz</p>
+    <p>İhsan Dedeç</p>
+    <p>Bilgisayar Mühendisi</p> <br>   
+    <ul>
+        <li>ali</li>
+        <li>veli</li>
+        <li>ayşe</li>
+        <li>fatma</li>
+    </ul>
+<button onclick="say()">Elemanları Say</button>
+
+    <script type="text/javascript">
+        /*console.log(document.getElementsByTagName("p")[2]);*/
+        console.log(document.getElementsByTagName("p"));
+
+        function say(){
+            alert(document.getElementsByTagName("li").length+" eleman bulunmaktadır.");
+        }
+
+    </script>
+</body>
+</html>
