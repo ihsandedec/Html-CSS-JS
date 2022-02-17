@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        #ihsan{
+            color: blue;;
+            font-size: large;
+        }
+    </style>
+</head>
+<body>
+    <p id="udemy">Udemy Kursları</p>
+    <input id="adgir" type="text" placeholder="Ad Giriniz"> <br> <br>
+    <input id="sec" type="checkbox">Seçim Yap <br> <br>
+
+    <button id="islem" onclick="renkDegistir()">ID Değiştir</button>
+    <button id="secimYap" onclick="secimYap()">İşaretle</button>
+
+    <script type="text/javascript">
+
+        function renkDegistir(){
+            document.getElementById("udemy").id="ihsan";
+            document.getElementById("adgir").placeholder="Soyad Giriniz";
+        }
+        function secimYap(){
+            document.getElementById("sec").checked=true;
+        }
+    </script>
+</body>
+</html>
