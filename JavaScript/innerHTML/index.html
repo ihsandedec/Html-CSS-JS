@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+    <p id="baslik"> Udemy Javascript Kursu </p>
+    <p id="ad">İhsan</p>
+    <p id="soyad">Dedeç</p>
+
+
+
+    <script type="text/javascript">
+        var e=document.getElementById("baslik").innerHTML;
+        console.log(e);
+
+        var ad=document.getElementById("ad").innerHTML;
+        var soyad=document.getElementById("soyad").innerHTML;
+        document.write(ad+" "+soyad);
+
+        document.getElementById("baslik").innerHTML="Udemy Javascript Kursuna Hoş Geldiniz";
+       
+    </script>
+</body>
+</html>
