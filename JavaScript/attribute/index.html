@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+    <a id="udemy">Javascript Kursuna Hoş Geldiniz</a> <br>
+    <button type="button" onclick="islem()">Ekle</button>
+    <button type="button" onclick="targetekle()">Target Ekle</button>
+
+    <script type="text/javascript">
+      //setAttribute:özellik ekleme
+      //attributes:özellikleri görüntüleme
+      //hasAttribute:özellik sorgulama
+      
+        function islem(){
+            document.getElementById("udemy").setAttribute("href","https://udemy.com");
+            var e=document.getElementById("udemy").attributes;
+            console.log(e);
+        }
+        function targetekle(){
+            var y=document.getElementById("udemy");
+            console.log(y);
+            console.log(y.hasAttribute("target"));
+
+            if(!y.hasAttribute("target")){
+                y.setAttribute("target","_blank")
+            }
+        }
+
+    </script>
+</body>
+</html>
