@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <ul id="konular">
+        <li>HTML</li>
+        <li>CSS</li>
+        <li>Javascript</li>
+        <li>JQuery</li>
+    </ul>
+    
+<button onclick="sil()">Sil</button>
+<button onclick="ekle()">Ekle</button>
+<button onclick="degistir()">Değiştir</button>
+
+    <script type="text/javascript">
+
+        function sil(){
+            var e=document.getElementById("konular");
+            e.removeChild(e.childNodes[0]);
+        }
+        function ekle(){
+            var x=document.createElement("li");
+            var y=document.createTextNode("C#");
+            x.appendChild(y);
+            document.getElementById("konular").appendChild(x);
+            console.log(x);
+        }
+        function degistir(){
+            var t=document.createTextNode("Emrah");
+		    console.log(t);
+		    var ekles=document.getElementById("udemy").childNodes[1];
+		    console.log(ekles);
+		    ekles.replaceChild(t,ekles.childNodes[0])
+
+        }
+    </script>
+</body>
+</html>
