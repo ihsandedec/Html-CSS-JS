@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+
+    <h1 id="baslik" onclick="degistir()">Javascript Kursu</h1>
+    <button onclick="date()">Tarih Ve Saat Göster</button>
+    <p id="tarihsaat"></p>
+    <input id="sayi1" type="text" placeholder="1.sayıyı Giriniz"> <br>
+    <input id="sayi2" type="text" placeholder="2.sayıyı Giriniz"> <br>
+    <b id="Sonuc"></b> <br>
+    <button onclick="topla()">Topla</button>
+    <script type="text/javascript">
+
+        function degistir(){
+            var e =document.getElementById("baslik");
+            e.innerHTML="JavaScript Kursuna Hoş Geldin";
+        }
+        function date(){
+            document.getElementById("tarihsaat").innerHTML=Date();
+        }
+        function topla(){
+            var e=parseInt(document.getElementById("sayi1").value) ;
+            var x=parseInt (document.getElementById("sayi2").value);
+            document.getElementById("Sonuc").innerHTML=e+x; 
+        }
+    </script>
+</body>
+</html>
