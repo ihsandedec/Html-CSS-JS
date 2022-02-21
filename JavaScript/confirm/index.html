@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <p>Kullanıcı hakları sözleşmesini onaylıyor okudum onayladım.</p>
+    <button onclick="islem()">Onay</button> <br>
+    <div id="sonuc"></div>
+
+    <script type="text/javascript">
+
+        function islem(){
+            var e = confirm("Onaylıyor Musunuz?");
+            if(e==true){
+                document.getElementById("sonuc").innerHTML="Onay Verildi";
+            }
+            else{
+                document.getElementById("sonuc").innerHTML="Onay Verilmedi";
+            }
+        }
+
+    </script>
+    
+</body>
+</html>
