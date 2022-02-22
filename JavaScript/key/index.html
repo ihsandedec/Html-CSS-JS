@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+    <button onmousedown="islemCTRL(event)">CTRL Basarak Tıklayınız</button>
+    <button onmousedown="islemALT(event)">ALT Basarak Tıklayınız</button>
+    <button onmousedown="islemSHIFT(event)">SHIFT Basarak Tıklayınız</button>
+
+    <script type="text/javascript">
+        function islemCTRL(event){
+            if (event.ctrlKey) {
+                alert("CTRL Tuşuna Basılı iken Tıkladınız");
+            }
+            else{
+                alert("Ctrl tuşuna basınız!");
+            }
+            
+        }
+        function islemALT(event){
+            if (event.altKey) {
+                alert("ALT Tuşuna Basılı iken Tıkladınız");
+            }
+            else{
+                alert("ALT tuşuna basınız!");
+            }
+            
+        }
+        function islemSHIFT(event){
+            if (event.shiftKey) {
+                alert("SHIFT Tuşuna Basılı iken Tıkladınız");
+            }
+            else{
+                alert("SHIFT tuşuna basınız!");
+            }
+            
+        }
+    </script>
+</body>
+</html>
