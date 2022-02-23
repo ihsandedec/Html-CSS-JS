@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    /*
+		Which
+
+		1 => Mouse sol tuşu
+		2 => Orta Tuş
+		3 => Sağ tuş
+
+		Button
+
+		0 => Mouse sol tuşu
+		1 => Orta Tuş
+		2 => Sağ tuş
+
+		İnternet explorer 8 ve öncesi eski tarayıcılarda
+
+		1 => sol tuş
+		2 = sağ tuş
+		4 => orta tuş
+
+		Buttons
+
+		1 => sol tuş
+		2 = sağ tuş
+		4 => orta tuş
+		8=> back mouse
+		16=> mouse ileri
+
+
+		*/
+
+    <button onmousedown="islem()">Mause Tuşlarına Tıklayınız</button>
+    <div id="sonuc"></div>
+
+    <script type="text/javascript">
+
+        function islem(){
+            document.getElementById("sonuc").innerHTML="Tıkladığınız Tuş: "+event.which;
+        }
+
+    </script>
+</body>
+</html>
