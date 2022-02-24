@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+
+    <input id="sec" onkeyup="up()" onkeydown="down()" type="text" placeholder="Bir tuşa basın" name="">
+
+    <script type="text/javascript">
+        function down(){
+
+            //Tuşa bastıımız anda aktifleşir
+            document.getElementById("sec").style.backgroundColor="aqua";
+
+
+        }
+
+        function up(){
+
+            //Tuşa basıldıktan sonra aktifleşir
+            document.getElementById("sec").style.backgroundColor="green";
+
+
+        }
+    </script>
+</body>
+</html>
