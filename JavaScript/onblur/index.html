@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+    <input id="ad" onblur="adKontrol()" type="text" placeholder="Adınızı Giriniz" name="" > <br><br>
+    <input type="text" placeholder="Soyadınızı Giriniz"> 
+    <div id="sonuc"></div>
+
+    <script type="text/javascript">
+
+        function adKontrol(){
+
+            var x= document.getElementById("ad").value;
+            var uzunluk=x.length;
+            
+            if (uzunluk<=6) {
+                document.getElementById("sonuc").innerHTML="Adınız 6 Karakterden küçük olamaz";
+            }
+        }
+
+    </script>
+</body>
+</html>
