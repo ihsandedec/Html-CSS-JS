@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+    <input onfocusin="islem(this)" onfocusout="kaybet(this)" type="text" placeholder="Bir tuşa basın" name="" style="background: red; color: yellow;">
+
+	<script type="text/javascript">
+
+		function islem(x){
+
+			x.style.background="aqua";
+			x.style.color="white";
+
+		}
+
+		function kaybet(y) {
+
+			y.style.background="green";
+		}
+	
+	</script>
+
+</body>
+</html>
