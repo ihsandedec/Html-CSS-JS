@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+    <button id="kaybol" onclick="islem(event)">Tıkla Ve Kaybet</button>
+    <div id="sonuc"></div>
+
+    <script type="text/javascript">
+
+        function islem(event){
+            x=event.detail;
+            console.log(x);
+            if (x==1) {
+                document.getElementById("kaybol").style.display="none";
+                document.getElementById("sonuc").innerHTML="Buton Gizlendi";
+            }
+
+        }
+
+    </script>
+</body>
+</html>
