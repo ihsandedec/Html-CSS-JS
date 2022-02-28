@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+    <img onclick="islem(event)" src="img/farkresim.jpg">
+    <div id="sonuc01"></div>
+    <div id="sonuc02"></div>
+    <div id="sonuc03"></div>
+    <div id="sonuc04"></div>
+
+    <script type="text/javascript">
+
+        function islem(event){
+            var x=event.clientX;
+            var y=event.clientY;
+            document.getElementById("sonuc01").innerHTML="X Koordinatı:"+x+"   Y Koordinatı:"+y;
+
+            if ((x>228 && x<249) && (y>226 && y<246)) {
+                document.getElementById("sonuc02").innerHTML="Kalp Bulundu";
+            }
+            if ((x>561 && x<591) && (y>26 && y<54)) {
+                document.getElementById("sonuc03").innerHTML="Ev Bulundu";
+            }
+            if ((x>92 && x<107) && (y>213 && y<232)) {
+                document.getElementById("sonuc04").innerHTML="Sarı Nokta Bulundu";
+            }
+        }
+
+    </script>
+</body>
+</html>
